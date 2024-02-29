@@ -1,0 +1,147 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+
+  }
+  .card{
+    max-width: 840px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 4rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 14rem;
+  }
+
+  form{
+    display: flex;
+  }
+ label{
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  color: #716F6F;
+ }
+ 
+ input{
+  width: 160px;
+  padding: 0.75rem 1.5rem;
+  letter-spacing: 0.16px;
+  margin-top: 8px;
+  margin-right: 32px;
+   box-sizing: border-box;
+  border: 0.01rem solid#DCDCDC;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  text-align: left;
+ }
+ input::placeholder{
+  color: black;
+ }
+ input:focus{
+  outline: none;
+  border: 0.01rem solid #854DFF;
+  cursor: pointer;
+ }
+
+ .input-invalid {
+  border: 0.01rem solid #FF5959;
+}
+.label-error{
+  color:#FF5959;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  color: #FF5959;
+ 
+
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+ .line{
+  display: flex;
+ }
+ .divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  height: 1px;
+  background-color: #DCDCDC;
+  flex-grow: 1;
+}
+
+.svg-container {
+ border:0.01rem solid #DCDCDC;
+  padding: 15px; 
+  background-color: #854DFF;
+  border-radius: 50%;
+}
+.arrow-svg {
+   width: 66px; 
+    height: 66px;
+}
+.period{
+  font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  font-size: 104px;
+  line-height: 110%;
+  letter-spacing: -0.16px;
+  color: black;
+  margin-top: 0px;
+}
+.date span{
+  color: #854DFF;
+}
+.svg-container:hover {
+  cursor: pointer;
+  background-color: black; 
+  color: white;
+}

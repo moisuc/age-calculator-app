@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <form action="" id="date-form">
+        <div class="form-block">
+          <label for="day">DAY</label>
+          <input
+            type="number"
+            id="day"
+            placeholder="DD"
+            max="31"
+            min="1"
+            required
+          />
+          <span class="error"></span>
+        </div>
+        <div class="form-block">
+          <label for="month">MONTH</label>
+          <input
+            type="number"
+            id="month"
+            placeholder="MM"
+            max="12"
+            min="1"
+            required
+          />
+          <span class="error"></span>
+        </div>
+        <div class="form-block">
+          <label for="year">YEAR</label>
+
+          <input
+            type="number"
+            id="year"
+            placeholder="YYYY"
+            max="2024"
+            min="1"
+            required
+          />
+          <span class="error"></span>
+        </div>
+      </form>
+
+      <div class="divider-container">
+        <div class="line"></div>
+
+        <button
+          class="svg-container"
+          id="submit-btn"
+          type="submit"
+          form="date-form"
+        >
+          <img src="./assets/images/icon-arrow.svg" alt="" class="arrow-svg" />
+        </button>
+      </div>
+      <div class="period">
+        <div class="date"><span id="calc-years">--</span> years</div>
+        <div class="date"><span id="calc-months">--</span> months</div>
+        <div class="date"><span id="calc-days">--</span> days</div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/moisuc">Moisuc Catalin</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
